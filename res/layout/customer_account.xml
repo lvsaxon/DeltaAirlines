@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:stretchColumns="0, 1, 2"
+    tools:ignore="HardcodedText,RtlHardcoded,UnusedAttribute" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <ImageView
+		        android:id="@+id/top_logoImg"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:scaleType="centerCrop"
+		        android:src="@drawable/top_img"
+		        tools:ignore="ContentDescription" />
+        	
+            <TableRow
+		        android:id="@+id/row"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:orientation="horizontal" >
+
+		        <TextView
+		            android:id="@+id/Name_txt"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="10dp"
+		            android:text="Customer Name"
+		            android:fontFamily="sans-serif-light"
+		            android:textColor="#08298A"
+		            android:textSize="20sp" />
+		
+		        <TextView
+		            android:id="@+id/Date_txt"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="50dp"
+		            android:text="1/15/16"
+		            android:textColor="#08298A"
+		            android:textSize="20sp" />
+			        
+            </TableRow>
+	
+		    <ImageView
+		        android:id="@+id/imgID"
+		        android:layout_width="85dp"
+		        android:layout_height="70dp"
+		        android:layout_marginLeft="20dp"
+		        android:scaleType="fitXY"
+		        android:src="@drawable/img_icon"
+		        tools:ignore="ContentDescription" />
+		
+		
+		<!-- Flight Information -->
+		    <TextView
+		        android:id="@+id/FlightInfo_txtView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="20dp"
+		        android:layout_marginTop="15dp"
+		        android:text="Flight Info"
+		        android:textAppearance="?android:attr/textAppearanceLarge"
+		        android:fontFamily="sans-serif-light"
+		        android:textColor="#08298A"
+		        android:textSize="20sp" />
+		
+		    <View
+		        android:id="@+id/view1"
+		        android:layout_width="match_parent"
+		        android:layout_height="2dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="20dp"
+		        android:layout_marginTop="5dp"
+		        android:background="#A4A4A4" />
+		    
+		    <TableRow
+		        android:id="@+id/row2"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginLeft="20dp" >
+		        
+		        <!-- Flight# -->
+			    <TextView
+		            android:id="@+id/flightNum_txtView"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Flight#:"
+		            android:textColor="#08298A"
+		            android:textSize="15sp" />
+			    
+			    <TextView
+			        android:id="@+id/FlightNum_txt"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginRight="110dp"
+			        android:layout_weight="1"
+			        android:gravity="center"
+			        android:text="2332"
+			        android:textColor="#08298A"
+			        android:textSize="15sp" />
+			</TableRow>  
+				  
+			<TableRow 
+		        android:id="@+id/row3"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginLeft="20dp" >
+			    
+			    <!-- Location -->
+			    <TextView
+			       android:id="@+id/location_txtView"
+			       android:layout_width="wrap_content"
+			       android:layout_height="wrap_content"
+			       android:text="Location:"
+			       android:textColor="#08298A"
+			       android:textSize="15sp" />
+			    
+			    <TextView
+			       android:id="@+id/Location_txt"
+			       android:layout_width="wrap_content"
+			       android:layout_height="wrap_content"
+			       android:layout_marginLeft="37dp"
+			       android:layout_weight="1"
+			       android:gravity="left"
+			       android:text="Atlanta"
+			       android:textColor="#08298A"
+			       android:textSize="15sp" />
+			 </TableRow>
+			 
+			    
+			 <TableRow 
+			    android:id="@+id/row4"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginLeft="20dp" >
+			     
+			    <!-- Depart Time -->
+		        <TextView
+		            android:id="@+id/time_txtView"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Depart Time:"
+		            android:textSize="15sp"
+		            android:textColor="#08298A" />
+			    
+		        <TextView
+		            android:id="@+id/Time_txt"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="14dp"
+			        android:layout_weight="1"
+			        android:gravity="left"
+		            android:text="1:00 PM"
+		            android:textSize="15sp"
+		            android:textColor="#08298A" />
+		     </TableRow>
+		        
+			 
+			 <TableRow 
+			    android:id="@+id/row5"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginLeft="20dp" >
+		        
+		        <!-- Destination -->
+			    <TextView
+			       android:id="@+id/destination_txtView"
+			       android:layout_width="wrap_content"
+			       android:layout_height="wrap_content"
+			       android:text="Destination:"
+			       android:textSize="15sp"
+		           android:textColor="#08298A" />
+			    
+			    <TextView
+			       android:id="@+id/Destination_txt"
+			       android:layout_width="wrap_content"
+			       android:layout_height="wrap_content"
+			       android:layout_marginLeft="20dp"
+			       android:layout_weight="1"
+			       android:gravity="left"
+			       android:text="Greensboro"
+			       android:textSize="15sp"
+		           android:textColor="#08298A" />
+			 </TableRow>
+			    
+			 <TableRow 
+			    android:id="@+id/row6"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginLeft="20dp" >
+			    
+			    <!-- Arrival Time -->
+		        <TextView
+		            android:id="@+id/arrivalTime_txtView"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Arrival Time:"
+		            android:textSize="15sp"
+		            android:textColor="#08298A" />
+			    
+			    <TextView
+		            android:id="@+id/ArrivalTime_txt"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="16dp"
+		            android:text="3:00 PM"
+		            android:textSize="15sp"
+		            android:textColor="#08298A" />
+			</TableRow>
+		    
+		    <View
+		        android:id="@+id/view2"
+		        android:layout_width="match_parent"
+		        android:layout_height="2dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="20dp"
+		        android:layout_marginTop="10dp"
+		        android:background="#A4A4A4" />
+			    
+			    
+			<!-- Seat & Ticker Information -->    
+			    <TextView
+			        android:id="@+id/SeatTicket_txtView"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="20dp"
+			        android:layout_marginTop="20dp"
+			        android:text="Seat/Ticket Info"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:fontFamily="sans-serif-light"
+			        android:textColor="#08298A"
+			        android:textSize="20sp" />
+			    
+			    <View
+			        android:id="@+id/view3"
+			        android:layout_width="match_parent"
+			        android:layout_height="2dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="20dp"
+			        android:layout_marginTop="5dp"
+			        android:background="#A4A4A4" />
+			    
+			    <RelativeLayout 
+			        android:id="@+id/bottom_layout"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:layout_marginLeft="20dp"
+			        android:orientation="vertical" >
+			        
+			        <!-- Ticket Class -->
+				    <TextView
+			            android:id="@+id/ticket_txtView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="Ticket Class:"
+			            android:textColor="#08298A"
+			            android:textSize="15sp" />
+				    
+				    <TextView
+			            android:id="@+id/Ticket_txt"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginTop="15dp"
+			            android:layout_marginLeft="13dp"
+			            android:layout_toRightOf="@+id/ticket_txtView"
+			            android:layout_alignBaseline="@+id/ticket_txtView"
+			            android:text="Economy"
+			            android:textColor="#08298A"
+			            android:textSize="15sp" />
+				    
+				    <TableRow 
+				        android:id="@+id/row7"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_below="@+id/ticket_txtView"
+				        android:layout_gravity="center" >
+				        
+					    <!-- Seat# -->
+				        <TextView
+				            android:id="@+id/seat_txtView"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_gravity="center"
+				            android:text="Seat#:"
+				            android:textColor="#08298A"
+				            android:textSize="15sp" />
+				        
+				        <TextView
+				            android:id="@+id/Seat_txt"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_gravity="center"
+				            android:layout_marginLeft="5dp"
+				            android:text="11E"
+				            android:textColor="#08298A"
+				            android:textSize="15sp" />
+				        
+					    <!-- Ticket Returns -->
+					    <Button
+				            android:id="@+id/returnTicket_btn"
+				            android:layout_width="wrap_content"
+				            android:layout_height="43dp"
+				            android:layout_marginLeft="67dp"
+				            android:text="Ticket Returns"
+				            android:textColor="#08298A"
+				            android:textSize="12sp"
+				            android:drawableRight="@drawable/arrow" />
+			        </TableRow>
+				    
+			    </RelativeLayout>
+        		
+			    <View
+			        android:id="@+id/view4"
+			        android:layout_width="match_parent"
+			        android:layout_height="2dp"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="20dp"
+			        android:layout_marginTop="5dp"
+			        android:background="#A4A4A4" />
+			    
+		</LinearLayout>
+    </ScrollView>
+
+</TableLayout>

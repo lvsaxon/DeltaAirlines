@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.delta_airlines"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:installLocation="auto" >
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="23" />
+    
+    <uses-permission 
+        android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Main Activity -->
+        	<activity
+        	    android:name=".DeltaActivity"
+        	    android:label="@string/app_name"
+        	    android:screenOrientation= "portrait" >
+        	</activity>
+        
+        <!-- Customer Account -->
+        	<activity 
+        	    android:name=".CustomerAccount"
+        	    android:label="My Account"
+        	    android:screenOrientation="portrait" >
+        	</activity>
+        	
+        <!-- Book a Flight Class -->
+	        <activity
+	            android:name=".Book_A_Flight"
+	            android:label="Book A Flight"
+	            android:screenOrientation="portrait" >
+	        </activity>
+	        
+	    <!-- Flight Search Class --> 
+	    	<activity 
+	    	    android:name=".FlightSearch"
+	    	    android:label="Flight Searches"
+	            android:screenOrientation="portrait" >
+	    	</activity>
+	    
+	    <!-- Purchase Ticket Class-->	
+	    	<activity 
+	    	    android:name=".PurchaseTicket"
+	    	    android:label="Purchase Ticket"
+	            android:screenOrientation="portrait" >
+	    	</activity>
+	    	
+	    <!-- Reserved Customer Ticket Seat -->
+	    	<activity 
+	    	    android:name=".Registration_Complete"
+	    	    android:label="Reserve Ticket"
+	    	    android:screenOrientation="portrait">
+	    	</activity> 
+	    	
+	    <!-- Seat Numbers -->
+	    	<activity 
+	    	    android:name=".SeatNumbers"
+	    	    android:label="Select a Seat"
+	    	    android:screenOrientation="portrait">
+	    	</activity>  	
+        
+    </application>
+
+</manifest>

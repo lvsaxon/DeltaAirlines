@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,RtlHardcoded" >
+    
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/purchaseTicket_btn"
+        android:alpha="0.4"
+        android:scaleType="fitXY"
+        android:src="@drawable/purchase_bg"
+        tools:ignore="ContentDescription" />
+    
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+ <!-- Top Layout -->
+        <LinearLayout 
+            android:id="@+id/time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000"
+            android:orientation="vertical" >
+            
+            <TextView
+	            android:id="@+id/Name_txt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="20dp"
+	            android:text="Name"
+	            android:textColor="#fff"
+	            android:textSize="20sp" />
+            
+            <TextView
+	            android:id="@+id/DepartDate_txt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="20dp"
+	            android:text="Date"
+	            android:textColor="#fff"
+	            android:textSize="20sp" />
+            
+        </LinearLayout>
+        
+        
+<!-- Center Layout -->
+
+		<LinearLayout
+		    android:id="@+id/center_layout"
+		    android:layout_width="match_parent"
+		    android:layout_height="200dp"
+		    android:background="@drawable/logo"
+		    android:layout_below="@+id/time_layout"
+		    android:orientation="vertical" >
+            
+        </LinearLayout>
+ 
+<!-- Left Layout -->
+        <LinearLayout 
+            android:id="@+id/left_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time_layout"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical" >
+            
+        <!-- Depart: Location & Time -->    
+            <TextView
+	            android:id="@+id/departure_txtView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginTop="10dp"
+	            android:text="Departure"
+	            android:textColor="#fff"
+	            android:textSize="20sp" />
+            
+            <TextView
+	            android:id="@+id/Location_txt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="35dp"
+	            android:text="ATL"
+	            android:textColor="#fff"
+	            android:textSize="30sp" />
+            
+            <TextView
+	            android:id="@+id/DepartTime_txt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="35dp"
+	            android:layout_marginRight="23dp"
+	            android:text="8:00 A.M."
+	            android:textColor="#fff"
+	            android:textSize="15sp" />
+		
+		<!-- Flight Num -->
+			<TextView
+                android:id="@+id/Flight_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Flight#"
+                android:textColor="#fff"
+                android:textSize="20sp" />		
+		
+            <TextView
+                android:id="@+id/flightNum_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="2307"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+            
+        </LinearLayout>
+        
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/left_layout"
+            android:layout_below="@+id/time_layout"
+            android:layout_alignBaseline="@+id/left_layout"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:paddingLeft="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/plane"
+                tools:ignore="ContentDescription,RtlSymmetry" />
+	        
+		</RelativeLayout>
+		
+<!-- Right Layout -->
+        <LinearLayout 
+            android:id="@+id/right_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time_layout"
+            android:layout_alignBaseline="@+id/left_layout"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+            
+        <!-- Arrival: Destination & Arrrival Time -->
+            <TextView
+	            android:id="@+id/arrival_txtView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="50dp"
+	            android:layout_marginTop="10dp"
+	            android:text="Arrival"
+	            android:textColor="#fff"
+	            android:textSize="20sp" />
+            
+            <TextView
+	            android:id="@+id/Destination_txt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="45dp"
+	            android:text="GSO"
+	            android:textColor="#fff"
+	            android:textSize="30sp" />
+            
+            <TextView
+	            android:id="@+id/ArrivalTime_txt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="10:00 A.M."
+	            android:textColor="#fff"
+	            android:textSize="15sp" />
+            
+        <!-- Seat# -->
+         	<TextView
+	            android:id="@+id/seat_txtView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="20dp"
+	            android:text="Seat"
+	            android:textColor="#fff"
+	            android:textSize="20sp" />
+         	
+         	<TextView
+	            android:id="@+id/Seat_txt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="11E"
+	            android:textColor="#fff"
+	            android:textSize="25sp" />
+            
+        </LinearLayout>
+
+	</RelativeLayout>
+
+    
+<!-- Cost -->
+	<LinearLayout
+        android:id="@+id/cost_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_above="@+id/purchaseTicket_btn"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cost_txtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cost: "
+            android:textColor="#fff"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/Price_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$120.00"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/purchaseTicket_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="PurchaseTicket_OnClick"
+        android:text="@string/purchaseTicket" />
+    
+</RelativeLayout>

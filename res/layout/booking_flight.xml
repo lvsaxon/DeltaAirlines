@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Book_A_Flight"
+    tools:ignore="RtlHardcoded,HardcodedText,UnusedAttribute,UselessParent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fadingEdge="vertical"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/customer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="@string/enter_name"
+                android:inputType="textPersonName" >
+
+                <requestFocus />
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <!-- From: City Origin -->
+				<TextView
+                    android:id="@+id/from_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/from_city" />
+
+                <Spinner
+                    android:id="@+id/city_origin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!-- To: Destination -->
+				<TextView
+                    android:id="@+id/to_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/to_city" />
+
+                <Spinner
+                    android:id="@+id/city_destination"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <!-- Departure Date -->
+				<TextView
+                    android:id="@+id/departureDate_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/departure_date" />
+
+                <EditText
+                    android:id="@+id/setDate_editTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="25dp"
+                    android:clickable="true"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/setDate"
+                    android:inputType="date" />
+
+                <!-- Departure Time -->
+				<TextView
+                    android:id="@+id/departureTime_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@+id/setDate_editTxt"
+                    android:text="@string/departure_time" />
+
+                <EditText
+                    android:id="@+id/departTime_editTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@+id/setDate_editTxt"
+                    android:clickable="true"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/setTime"
+                    android:inputType="time" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="#2E9AFE" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/ticket_selection"
+                    android:fontFamily="sans-serif-light"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <!-- Ticket Class Selection -->
+				<RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/economy_class"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/economy_class" />
+
+                    <RadioButton
+                        android:id="@+id/business_class"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/business_class" />
+
+                    <RadioButton
+                        android:id="@+id/first_class"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/first_class" />
+                </RadioGroup>
+            </LinearLayout>
+            
+             <!-- Ticket Class Selection -->
+	        <android.support.v4.view.ViewPager
+				android:id="@+id/view_pager"
+			    android:layout_width="match_parent"
+			    android:layout_marginLeft="10dp"
+			    android:layout_marginRight="10dp"
+		        android:layout_height="170dp" />
+	        
+	        <!-- Seat Number Selection -->
+	        <Button
+	            android:id="@+id/seat_select_btn"
+	            android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="right"
+		        android:text="Select A Seat" />
+	        
+	        <Button
+	            android:id="@+id/check_flights_btn"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/check_flights" />
+				        
+		</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

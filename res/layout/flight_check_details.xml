@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,RtlHardcoded,UnusedAttribute" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp" >
+        	
+        	<ImageView 
+        	    android:layout_width="match_parent"
+        	    android:layout_height="match_parent"
+        	    android:alpha="0.8"
+        	    android:scaleType="fitXY"
+        	    android:src="@drawable/item_select"
+        	    tools:ignore="ContentDescription" />
+        
+        <!-- Flight# Text -->
+			<TextView
+	            android:id="@+id/flightNum_txt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="5dp"
+	            android:layout_marginTop="5dp"
+	            android:text="@string/flight_num"
+	            android:fontFamily="sans-serif-condensed"
+	            android:textSize="20sp"
+	            android:textColor="#fff" />
+	
+	        <TextView
+	            android:id="@+id/flight_Num"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBaseline="@id/flightNum_txt"
+	            android:layout_toRightOf="@id/flightNum_txt"
+	            android:text="2332"
+	            android:fontFamily="sans-serif-condensed"
+	            android:textSize="20sp"
+	            android:textColor="#fff" />
+
+        <!-- Seat Number -->
+        	<TextView 
+        	    android:id="@+id/seatNum_txt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" 
+	            android:layout_marginTop="5dp"
+	            android:layout_marginRight="37dp"
+	            android:layout_alignParentRight="true"
+	            android:text="Seat: "
+	            android:fontFamily="sans-serif-condensed"
+	            android:textSize="20sp"
+	            android:textColor="#fff" />
+        	
+        	<TextView 
+        	    android:id="@+id/seat_Num"
+        	    android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:layout_marginRight="10dp"
+	            android:layout_alignBaseline="@id/seatNum_txt"
+	            android:layout_alignParentRight="true"
+	            android:text="4E"
+	            android:fontFamily="sans-serif-condensed"
+	            android:textSize="17sp"
+	            android:textColor="#fff" />
+        	
+        	
+        <!-- Depature: City & Time Text -->
+	        <TextView
+	            android:id="@+id/depature_Txt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="10dp"
+	            android:layout_marginTop="30dp"
+	            android:text="Departure: "
+	            android:textSize="18sp"
+	            android:fontFamily="sans-serif-condensed"
+	            android:textColor="#fff" />
+	
+	        <TextView
+	            android:id="@+id/city_depart"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/depature_Txt"
+	            android:layout_marginLeft="30dp"
+	            android:text="City"
+	            android:fontFamily="sans-serif-condensed"
+	            android:textSize="15sp"
+	            android:textColor="#fff" />
+	        
+	        <TextView
+	            android:id="@+id/time_depart"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/city_depart"
+	            android:layout_marginLeft="30dp"
+	            android:text="2:00"
+	            android:fontFamily="sans-serif-condensed"
+	            android:textSize="15sp"
+	            android:textColor="#fff" />
+
+        
+        <!-- Arrival: City & Time Text -->
+	        <TextView
+	            android:id="@+id/arrival_txt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBaseline="@id/depature_Txt"
+	            android:layout_marginLeft="200dp"
+	            android:text="Arrival: "
+	            android:fontFamily="sans-serif-condensed"
+	            android:textSize="18sp"
+	            android:textColor="#fff" />
+	        
+	        <TextView
+	            android:id="@+id/city_arrival"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/arrival_txt"
+	            android:layout_alignBaseline="@id/city_depart"
+	            android:layout_marginLeft="210dp"
+	            android:textSize="15sp"
+	            android:fontFamily="sans-serif-condensed"
+	            android:textColor="#fff" />
+	        
+	        <TextView
+	            android:id="@+id/time_arrival"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/city_arrival"
+	            android:layout_alignBaseline="@id/time_depart"
+	            android:layout_marginLeft="210dp"
+	            android:textSize="15sp"
+	            android:fontFamily="sans-serif-condensed"
+	            android:textColor="#fff" />
+	        
+	</RelativeLayout>
+    
+</LinearLayout>
